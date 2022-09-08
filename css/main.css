@@ -27,12 +27,12 @@ html {
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: "Heebo", "Arial", sans-serif;
   background-color: #f2f2f2;
   height: 100vh;
@@ -42,7 +42,7 @@ body {
   max-width: 900px;
   padding: 0 20px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 27px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -369,4 +369,36 @@ template {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 80px;
+}
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.header__iteam {
+  margin-left: 33px;
+}
+.header__iteam:first-child {
+  margin: 0;
+}
+.header__link {
+  text-decoration: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: right;
+  color: #000;
+  transition: all 1s;
+}
+.header__link:hover {
+  color: #ff6464;
 }/*# sourceMappingURL=main.css.map */
